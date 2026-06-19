@@ -1,0 +1,12 @@
+.vs/
+*.suo
+*.user
+*.dbmdl
+*.jfm
+*.bak
+*.log
+*.tmp
+~$*
+.DS_Store
+Thumbs.db
+
