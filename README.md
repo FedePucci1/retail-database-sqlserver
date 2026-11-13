@@ -2,6 +2,12 @@
 
 Proyecto académico de diseño e implementación de una base de datos para una organización de ventas minoristas. Incluye definición del modelo, procedimientos almacenados, importación de datos, reportes, seguridad y pruebas funcionales.
 
+**SQL Server · T-SQL · Modelado relacional · Procedimientos almacenados · Importación de datos**
+
+![Modelo entidad-relación del proyecto](DER/DER.png)
+
+Este repositorio conserva un trabajo grupal de UNLaM y su autoría. Está presentado como muestra de ingeniería de bases de datos; la instalación completa sobre una instancia limpia todavía requiere validación.
+
 ## Contenido
 
 - Modelo entidad-relación en `DER/DER.png`.
@@ -20,6 +26,8 @@ Proyecto académico de diseño e implementación de una base de datos para una o
 
 Ejecutar los archivos de `sql/` en orden numérico, desde `00_schema.sql` hasta `10_employee_encryption.sql`. Luego pueden ejecutarse los archivos de `tests/` sobre una base de prueba.
 
+Los scripts representan etapas de una entrega académica y algunos modifican objetos existentes. Usar una base de prueba: la secuencia completa no se presenta como una migración idempotente. El ejemplo de cifrado utiliza una frase de demostración incluida en el código y no constituye una gestión de claves para producción.
+
 Las importaciones requieren datasets externos que no se incluyen por privacidad y derechos de uso. `tests/02_import_examples.sql` contiene una ruta configurable para usar datos propios.
 
 ## Estructura
@@ -33,6 +41,8 @@ tests/     lotes de prueba y ejemplos de invocación
 ## Estado de la curaduría
 
 Los scripts duplicados de la entrega fueron unificados y normalizados a UTF-8. Queda pendiente validar la instalación completa contra una instancia limpia de SQL Server y preparar un dataset sintético redistribuible.
+
+La revisión de publicación del 13/11/2026 verificó documentación, estructura de scripts, diagrama, autoría y ausencia de hallazgos en el escaneo de secretos del historial. No se ejecutaron los scripts contra SQL Server durante esa revisión.
 
 ## Autoría
 
